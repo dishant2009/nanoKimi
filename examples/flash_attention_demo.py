@@ -401,7 +401,7 @@ def plot_results(results, memory_usage=None):
 
 def main():
     """Main demonstration function."""
-    print("🚀 nanoKimi Flash Attention Demonstration\n")
+    print(" nanoKimi Flash Attention Demonstration\n")
     
     # Check system capabilities
     print("System Information:")
@@ -434,18 +434,18 @@ def main():
     print("="*60)
     
     if attention_info['flash_attention']:
-        print("✅ Flash Attention is available and provides:")
+        print(" Flash Attention is available and provides:")
         print("   - Reduced memory usage (especially for long sequences)")
         print("   - Faster training and inference")
         print("   - Better numerical stability")
     else:
-        print("❌ Flash Attention not available.")
+        print(" Flash Attention not available.")
         print("   Install with: pip install flash-attn --no-build-isolation")
     
     if attention_info['xformers']:
-        print("✅ xFormers is available as a fallback")
+        print(" xFormers is available as a fallback")
     else:
-        print("💡 Consider installing xFormers: pip install xformers")
+        print(" Consider installing xFormers: pip install xformers")
     
     print(f"\nRecommended implementation: {attention_info['recommended']}")
     
