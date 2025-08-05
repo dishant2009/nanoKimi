@@ -172,7 +172,7 @@ def main():
         print(f"  - MoE layers: {len(moe_layers)}")
         print(f"  - Experts per MoE layer: {model_config.moe['num_experts']}")
     
-    print("\n✅ Basic usage example completed successfully!")
+    print("\n Basic usage example completed successfully!")
     print("\nNext steps:")
     print("  - Try training with a real dataset (OpenWebText)")
     print("  - Experiment with different model configurations")
