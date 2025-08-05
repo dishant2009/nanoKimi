@@ -1,0 +1,4 @@
+[console_scripts]
+nanokimi-benchmark = nanokimi.scripts.benchmark:main
+nanokimi-generate = nanokimi.scripts.generate:main
+nanokimi-train = nanokimi.scripts.train:main

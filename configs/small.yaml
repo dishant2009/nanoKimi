@@ -1,0 +1,59 @@
+# nanoKimi - Small configuration
+# Small-scale model for experimentation
+
+model:
+  n_layer: 12
+  n_head: 12
+  n_embd: 768
+  vocab_size: 50257
+  block_size: 1024
+  dropout: 0.1
+  
+  moe:
+    use_moe: true
+    num_experts: 8
+    top_k: 2
+    expert_capacity_factor: 1.25
+    load_balance_loss_coeff: 0.01
+    moe_layers: [3, 7, 11]  # Use MoE in layers 3, 7, and 11
+  
+  attention:
+    type: "flash"  # Use flash attention for better performance
+    latent_dim: 64
+    num_latents: 32
+    use_flash_attention: true
+    use_rope: false  # Rotary Position Embedding
+
+training:
+  batch_size: 32
+  micro_batch_size: 8
+  max_steps: 50000
+  eval_interval: 1000
+  log_interval: 100
+  
+  learning_rate: 3e-4
+  min_learning_rate: 3e-5
+  warmup_steps: 1000
+  lr_decay_steps: 50000
+  weight_decay: 0.1
+  grad_clip: 1.0
+  
+  expert_lr_multiplier: 1.0
+  load_balance_loss_coeff: 0.01
+  
+  dataset_name: "openwebtext"
+  data_dir: "./data"
+  num_workers: 4
+  
+  checkpoint_dir: "./checkpoints/small"
+  save_interval: 2500
+  keep_last_n_checkpoints: 3
+  
+  use_wandb: true
+  wandb_project: "nanokimi"
+  
+  device: "auto"
+  compile_model: true
+  mixed_precision: true
+  
+  eval_max_batches: 100
