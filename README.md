@@ -297,4 +297,4 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 
 If you find this project helpful, please consider giving it a star on GitHub!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/nanokimi&type=Date)](https://star-history.com/#dishant2009/nanokimi&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=dishant2009/nanokimi&type=Date)](https://star-history.com/#dishant2009/nanokimi&Date)
