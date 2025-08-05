@@ -287,7 +287,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) for deta
 
 - **Issues**: [GitHub Issues](https://github.com/dishant2009/nanoKimi)
 - **Discussions**: [GitHub Discussions](https://github.com/dishant2009/nanokimi/discussions)
-- **Email**: your.email@example.com
+- **Email**: digdarshidishant@gmail.com
 
 ---
 
