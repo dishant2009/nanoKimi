@@ -2,7 +2,7 @@
 
 A simplified, educational implementation of the Kimi-K2 architecture that demonstrates its key innovations over traditional transformer models.
 
-## 🚀 Key Features
+##  Key Features
 
 nanoKimi showcases three revolutionary innovations from Kimi-K2:
 
@@ -10,11 +10,11 @@ nanoKimi showcases three revolutionary innovations from Kimi-K2:
 2. **Muon Optimizer** - Specialized optimizer for MoE training  
 3. **Latent Attention** - Enhanced context understanding through latent space projections
 
-## 📦 Installation
+##  Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/nanokimi.git
+git clone [https://github.com/yourusername/nanokimi.git](https://github.com/dishant2009/nanoKimi)
 cd nanokimi
 
 # Create virtual environment
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-## 🏃 Quick Start
+##  Quick Start
 
 ### 1. Train a Nano Model
 
@@ -82,7 +82,7 @@ text = generator.generate_text("The future of artificial intelligence", max_new_
 print(text)
 ```
 
-## 📋 Model Configurations
+##  Model Configurations
 
 ### Nano (Testing)
 - **Parameters**: ~10M
@@ -105,7 +105,7 @@ print(text)
 - **Experts**: 16
 - **Use case**: Real applications
 
-## 🧠 Architecture Overview
+##  Architecture Overview
 
 ### Mixture of Experts (MoE)
 ```
@@ -133,7 +133,7 @@ Input → Cross-Attention → Latent Space → Self-Attention → Cross-Attentio
 - **Convergence**: Specialized momentum handling for sparse gradients
 - **Memory efficient**: Optimized for large sparse models
 
-## 📊 Training Data
+##  Training Data
 
 ### Toy Dataset (Default)
 - Random tokens for testing
@@ -177,7 +177,7 @@ train_path, val_path = processor.process_dataset(
 )
 ```
 
-## 📈 Benchmarking
+##  Benchmarking
 
 Compare nanoKimi against nanoGPT and other baselines:
 
@@ -194,7 +194,7 @@ ppl = evaluator.evaluate_perplexity(model, dataset)
 results = comparison.compare_models(nanokimi_model, nanogpt_model, dataset)
 ```
 
-## ⚡ Performance Optimizations
+##  Performance Optimizations
 
 ### Mixed Precision Training
 ```yaml
@@ -215,7 +215,7 @@ generator = Generator(model)
 text = generator.generate_text(prompt, use_cache=True)
 ```
 
-## 🔬 Experiment Tracking
+##  Experiment Tracking
 
 ### Weights & Biases Integration
 ```yaml
@@ -232,7 +232,7 @@ All metrics are also logged locally:
 - Memory usage and tokens/second
 - Validation perplexity
 
-## 🎯 Key Advantages Over nanoGPT
+##  Key Advantages Over nanoGPT
 
 1. **Training Speed**: 20%+ faster convergence with Muon optimizer
 2. **Parameter Efficiency**: Better performance per parameter with MoE
@@ -240,7 +240,7 @@ All metrics are also logged locally:
 4. **Scalability**: Efficient scaling to larger models with sparse experts
 5. **Memory Efficiency**: Comparable memory usage despite architectural complexity
 
-## 🧪 Research Extensions
+##  Research Extensions
 
 nanoKimi is designed for extensibility:
 
@@ -249,14 +249,14 @@ nanoKimi is designed for extensibility:
 - **Multimodal**: Extend to vision and other modalities
 - **Deployment**: Optimize for edge devices and inference
 
-## 📚 Documentation
+##  Documentation
 
 - [Training Guide](docs/training.md) - Detailed training instructions
 - [Architecture Deep Dive](docs/architecture.md) - Technical implementation details
 - [API Reference](docs/api.md) - Complete API documentation
 - [Benchmarking](docs/benchmarking.md) - Performance evaluation guide
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
@@ -273,27 +273,27 @@ black nanokimi/
 flake8 nanokimi/
 ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Moonshot AI** - For the original Kimi-K2 innovations
 - **nanoGPT** - For inspiration and educational approach
 - **Transformers Community** - For the foundation this builds upon
 
-## 📞 Contact
+##  Contact
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/nanokimi/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/nanokimi/discussions)
+- **Issues**: [GitHub Issues](https://github.com/dishant2009/nanoKimi)
+- **Discussions**: [GitHub Discussions](https://github.com/dishant2009/nanokimi/discussions)
 - **Email**: your.email@example.com
 
 ---
 
 > **Note**: This is an educational implementation designed to demonstrate Kimi-K2 concepts. For production use, consider the full Kimi-K2 implementation.
 
-## ⭐ Star History
+##  Star History
 
 If you find this project helpful, please consider giving it a star on GitHub!
 
